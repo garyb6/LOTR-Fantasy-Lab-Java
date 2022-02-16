@@ -1,28 +1,26 @@
 package players.fellowship;
-import behaviours.IEquip;
 import players.Player;
+import players.fellowship.weapons.Weapon;
 
 
+public class DwarfOfMoria extends Player {
 
-public class DwarfOfMoria extends Player implements IEquip {
+    private Weapon weapon;
 
-    private IEquip weapon;
-
-    public DwarfOfMoria(double hp, String name, IEquip weapon) {
+    public DwarfOfMoria(double hp, String name, Weapon weapon) {
         super(hp, name);
         this.weapon = weapon;
-
     }
 
-    public IEquip getWeapon() {
+    public Weapon getWeapon() {
         return weapon;
     }
 
-    public void setWeapon(IEquip weapon) {
+    public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
 
-    public void equip(IEquip weapon) {
+    public void equip(Weapon weapon) {
         setWeapon(weapon);
     }
 }

@@ -1,14 +1,15 @@
 package players.fellowship.weapons;
 
+
+import behaviours.IEquip;
+
 public abstract class Weapon {
     private int minPower;
     private int maxPower;
-    private String type;
 
-    public Weapon(int minPower, int maxPower, String type) {
+    public Weapon(int minPower, int maxPower) {
         this.minPower = minPower;
         this.maxPower = maxPower;
-        this.type = type;
     }
 
     public int getMinPower() {
@@ -25,13 +26,5 @@ public abstract class Weapon {
 
     public void setMaxPower(int maxPower) {
         this.maxPower = maxPower;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 }
