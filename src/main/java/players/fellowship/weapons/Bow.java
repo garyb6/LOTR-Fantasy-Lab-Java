@@ -9,5 +9,7 @@ public class Bow extends Weapon{
         this.type = "Bow";
     }
 
-
+    public String getType() {
+        return type;
+    }
 }

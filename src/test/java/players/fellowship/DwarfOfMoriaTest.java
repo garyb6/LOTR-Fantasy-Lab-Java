@@ -3,6 +3,7 @@ package players.fellowship;
 import org.junit.Before;
 import org.junit.Test;
 import players.fellowship.weapons.Axe;
+import players.fellowship.weapons.Bow;
 
 import static org.junit.Assert.*;
 
@@ -10,12 +11,12 @@ public class DwarfOfMoriaTest {
 
 DwarfOfMoria dwarf;
 Axe axe;
-Axe axe2;
+Bow bow;
 
     @Before
     public void setUp() {
         axe = new Axe(5, 10);
-        axe2 = new Axe(10, 20);
+        bow = new Bow(10, 20);
         dwarf = new DwarfOfMoria(50, "Gimli", axe);
     }
 
@@ -27,5 +28,11 @@ Axe axe2;
     @Test
     public void dwarfAxeHasMaxPower(){
         assertEquals(10, dwarf.getWeapon().getMaxPower());
+    }
+
+    @Test
+    public void dwarfCanChangeWeapon(){
+        dwarf.equip(bow);
+        assertNotSame(axe, dwarf.getWeapon());
     }
 }
