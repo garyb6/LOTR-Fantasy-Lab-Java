@@ -1,14 +1,7 @@
 package quest;
-import enemies.Ringwraith;
 import players.Player;
-import players.fellowship.DwarfOfMoria;
-import players.fellowship.SilvanElf;
-import players.fellowship.weapons.Axe;
-import players.fellowship.weapons.Bow;
 import rooms.Room;
 import rooms.Weathertop;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Quest {
@@ -16,21 +9,15 @@ public class Quest {
     private ArrayList<Player> players;
     private Room currentRoom;
 
-//    private Axe axe = new Axe(5, 15);
-//    private Bow bow = new Bow(8, 12);
-//    private DwarfOfMoria dwarf = new DwarfOfMoria(50, "Gimli", axe);
-//    private SilvanElf elf = new SilvanElf(100, "Legolas", bow);
-
-    Ringwraith ringwraith = new Ringwraith("Khamûl", 50, 10 );
 
 
-    private Weathertop weathertop = new Weathertop(ArrayList<Ringwraith>; );
+    private Weathertop weathertop = new Weathertop();
 
-    public Quest(ArrayList<Player> players, Room currentRoom) {
-        this.levels = new ArrayList<Room>();
-        this.players = new ArrayList<>();
+    public Quest(ArrayList<Player> players) {
+        this.levels = new ArrayList<>();
+        levels.add(weathertop);
+        this.players = players;
         this.currentRoom = levels.get(0);
-        levels.add()
     }
 
     public ArrayList<Room> getLevels() {
@@ -47,5 +34,13 @@ public class Quest {
 
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
+    }
+
+    public Room getCurrentRoom() {
+        return currentRoom;
+    }
+
+    public void setCurrentRoom(Room currentRoom) {
+        this.currentRoom = currentRoom;
     }
 }

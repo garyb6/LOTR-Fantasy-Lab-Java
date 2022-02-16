@@ -3,8 +3,8 @@ import java.util.Random;
 
 public class Orc extends Enemy {
 
-    public Orc(double hp, String name, int power) {
-        super(hp, name, power);
+    public Orc(String name, double hp, int power) {
+        super(name, hp, power);
     }
 
     public String fleeBattle(){
