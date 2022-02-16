@@ -4,12 +4,10 @@ public abstract class Player {
 
     private double hp;
     private String name;
-    private int power;
 
-    public Player(double hp, String name, int power) {
+    public Player(double hp, String name) {
         this.hp = hp;
         this.name = name;
-        this.power = power;
     }
 
     public double getHp() {
