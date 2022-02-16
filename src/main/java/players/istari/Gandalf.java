@@ -6,4 +6,5 @@ public class Gandalf extends Player {
     public Gandalf(double hp, String name) {
         super(hp, name);
     }
+
 }
