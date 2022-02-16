@@ -15,8 +15,8 @@ Bow bow;
 
     @Before
     public void setUp() {
-        axe = new Axe(5, 10);
-        bow = new Bow(10, 20);
+        axe = new Axe(5, 15);
+        bow = new Bow(8, 12);
         dwarf = new DwarfOfMoria(50, "Gimli", axe);
     }
 

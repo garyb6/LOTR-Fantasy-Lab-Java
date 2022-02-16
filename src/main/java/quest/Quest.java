@@ -1,9 +1,12 @@
 package quest;
 import enemies.Ringwraith;
 import players.Player;
+import players.fellowship.DwarfOfMoria;
+import players.fellowship.SilvanElf;
+import players.fellowship.weapons.Axe;
+import players.fellowship.weapons.Bow;
 import rooms.Room;
 import rooms.Weathertop;
-
 import java.util.ArrayList;
 
 public class Quest {
@@ -11,7 +14,10 @@ public class Quest {
     private ArrayList<Player> players;
     private Room currentRoom;
 
-
+    private Axe axe = new Axe(5, 15);
+    private Bow bow = new Bow(8, 12);
+    private DwarfOfMoria dwarf = new DwarfOfMoria(50, "Gimli", axe);
+    private SilvanElf elf = new SilvanElf(100, "Legolas", bow);
 //    Ringwraith ringwraith = new Ringwraith(5, "Khamûl")
 
 
