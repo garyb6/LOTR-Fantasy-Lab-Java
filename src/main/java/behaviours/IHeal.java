@@ -4,7 +4,7 @@ import players.Player;
 
 public interface IHeal {
 
-    public void changeRemedy();
+    public void changeRemedy(IHeal remedy);
 
     public void healPlayer(Player player);
 

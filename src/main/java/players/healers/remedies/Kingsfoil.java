@@ -13,7 +13,7 @@ public class Kingsfoil implements IHeal {
     }
 
     @Override
-    public void changeRemedy() {
+    public void changeRemedy(IHeal remedy) {
 
     }
 

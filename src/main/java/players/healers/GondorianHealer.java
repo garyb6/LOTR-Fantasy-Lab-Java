@@ -31,7 +31,8 @@ public class GondorianHealer extends Player implements IHeal {
     }
 
     @Override
-    public void changeRemedy() {
+    public void changeRemedy(IHeal remedy) {
+        setItem(remedy);
 
     }
 }
