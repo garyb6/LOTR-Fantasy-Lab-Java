@@ -1,6 +1,5 @@
 package players.fellowship;
 
-import behaviours.IEquip;
 import org.junit.Before;
 import org.junit.Test;
 import players.fellowship.weapons.Axe;

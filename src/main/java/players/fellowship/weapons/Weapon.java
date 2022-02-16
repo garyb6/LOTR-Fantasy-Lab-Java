@@ -1,8 +1,5 @@
 package players.fellowship.weapons;
 
-
-import behaviours.IEquip;
-
 public abstract class Weapon {
     private int minPower;
     private int maxPower;
