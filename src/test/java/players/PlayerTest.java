@@ -1,12 +1,12 @@
 package players;
+
 import org.junit.Before;
 
 import static org.junit.Assert.*;
 
-public class ManOfGondorTest {
+public class PlayerTest {
 
     @Before
-    public void before() {
-
+    public void setUp() throws Exception {
     }
 }
