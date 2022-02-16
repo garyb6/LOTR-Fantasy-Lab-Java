@@ -2,8 +2,12 @@ package players.fellowship.weapons;
 
 
 public class Dagger extends Weapon{
-    public Dagger(int minPower, int maxPower, String type) {
+
+    private String type;
+
+    public Dagger(int minPower, int maxPower) {
         super(minPower, maxPower);
+        this.type = "Dagger";
     }
 
 }

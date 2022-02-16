@@ -1,8 +1,11 @@
 package players.fellowship.weapons;
 
 public class Sword extends Weapon{
-    public Sword(int minPower, int maxPower, String type) {
+    private String type;
+    public Sword(int minPower, int maxPower) {
         super(minPower, maxPower);
+        this.type = "Bow";
+
     }
 
 }
