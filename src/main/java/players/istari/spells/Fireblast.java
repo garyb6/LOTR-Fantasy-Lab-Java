@@ -1,4 +1,8 @@
 package players.istari.spells;
 
-public class Fireblast {
+public class Fireblast extends Spells{
+    public Fireblast(int spellPower) {
+        super(spellPower);
+        setSpellPower(10);
+    }
 }

@@ -7,7 +7,7 @@ public abstract class Enemy {
     private String name;
     private int power;
 
-    public Enemy(double hp, String name, int power) {
+    public Enemy(String name, double hp, int power) {
         this.hp = hp;
         this.name = name;
         this.power = power;
