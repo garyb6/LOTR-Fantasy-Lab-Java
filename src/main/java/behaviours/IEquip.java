@@ -1,5 +1,5 @@
 package behaviours;
 
 public interface IEquip {
-    void equip(IEquip item);
+    void equip(IEquip weapon);
 }
