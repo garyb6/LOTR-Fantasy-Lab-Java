@@ -29,4 +29,9 @@ public class QuestTest {
     public void canGetCurrentRoom() {
         assertNotNull(quest.getCurrentRoom());
     }
+
+    @Test
+    public void firstRoomEnemyHasName(){
+        assertEquals("Khamûl", quest.getCurrentRoom());
+    }
 }
